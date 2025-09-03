@@ -6,11 +6,11 @@ import { PaginaMerchandisingComponent } from './pages/pagina-merchandising/pagin
 
 export const routes: Routes = [
     {
-        path:"",
+        path:"inicio",
         component:PaginaPrincipalComponent,
-        children:[
+       // children:[
         
-        {
+    },{
             path:"pagina-comics",
             component: PaginaComicsComponent,
         },
@@ -26,10 +26,9 @@ export const routes: Routes = [
             path:"pagina-mangas",
             component:PaginaComicsComponent,
         },
-        ]
-    },{
+    {
         path:"**",
-        redirectTo:'',
+        redirectTo:'inicio',
         pathMatch:'full',
     }
 ];
