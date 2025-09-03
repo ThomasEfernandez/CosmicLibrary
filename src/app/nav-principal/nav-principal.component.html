@@ -1,21 +1,49 @@
 <header>
-<div class="nav-bar">
+  <div class="nav-bar">
     <div class="logo">
-        <a routerLink=""><img src="favicon.ico" alt=""></a>
-
+      <a routerLink=""><img src="favicon.ico" alt=""></a>
     </div>
+
     <nav class="nav-principal">
-        <ul class="lista-navegacion">
-            <li class="item"><a routerLink="inicio">Inicio</a></li>
-            <li class="item"><a routerLink="/pagina-comics">Comics</a></li>
-            <li class="item"><a routerLink="/pagina-merchandising">Merchandising</a></li>
-            <li class="item"><a routerLink="/pagina-libros">Libros</a></li>
-            <li class="item"><a routerLink="/pagina-mangas">Mangas</a></li>
-          
-        </ul>
+      <ul class="lista-navegacion">
+        <li class="item"><a routerLink="inicio">Inicio</a></li>
 
+        <li class="item dropdown">
+          <a routerLink="/pagina-comics">Comics</a>
+          <ul class="submenu">
+            <li><a routerLink="/pagina-comics/marvel">Marvel</a></li>
+            <li><a routerLink="/pagina-comics/dc">DC</a></li>
+            <li><a routerLink="/pagina-comics/independientes">Independientes</a></li>
+          </ul>
+        </li>
+
+        <li class="item dropdown">
+          <a routerLink="/pagina-merchandising">Merchandising</a>
+          <ul class="submenu">
+            <li><a routerLink="/pagina-merchandising/remeras">Remeras</a></li>
+            <li><a routerLink="/pagina-merchandising/posters">Posters</a></li>
+            <li><a routerLink="/pagina-merchandising/figuras">Figuras</a></li>
+          </ul>
+        </li>
+
+        <li class="item dropdown">
+          <a routerLink="/pagina-libros">Libros</a>
+          <ul class="submenu">
+            <li><a routerLink="/pagina-libros/ficcion">Policial</a></li>
+            <li><a routerLink="/pagina-libros/no-ficcion">Ficción</a></li>
+            <li><a routerLink="/pagina-libros/arte">Infantiles</a></li>
+          </ul>
+        </li>
+
+        <li class="item dropdown">
+          <a routerLink="/pagina-mangas">Mangas</a>
+          <ul class="submenu">
+            <li><a routerLink="/pagina-mangas/shonen">Shōnen</a></li>
+            <li><a routerLink="/pagina-mangas/seinen">Seinen</a></li>
+            <li><a routerLink="/pagina-mangas/josei">Josei</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-</div>
-
-
+  </div>
 </header>
