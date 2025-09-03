@@ -1,19 +1,19 @@
-<div class="carrucel-container">
-  
-  
-<div class="carrusel-container" #carruselContainer>
-  <div class="carrusel" [style.transform]="transformStyle">
-    <div class="card" *ngFor="let item of items">
-      <img [src]="item.img" [alt]="item.title" />
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
+<div class="container">
+  <div class="carrusel-container" #carruselContainer>
+
+    <div class="carrusel" [style.transform]="transformStyle" style="transition: transform 0.5s cubic-bezier(.25,.8,.25,1);">
+      <div class="card" *ngFor="let item of items">
+        <img [src]="item.img" [alt]="item.title" />
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <div class="button-container">
+            <button class="boton-comprar">Comprar</button>
+        </div>
+      </div>
     </div>
+    <button (click)="moverCarrusel(-1)" class="nav-btn nav-btn-left">◀</button>
+    <button (click)="moverCarrusel(1)" class="nav-btn nav-btn-right">▶</button>
   </div>
-</div>
 
-<div class="botones">
-  <button (click)="moverCarrusel(-1)">◀</button>
-  <button (click)="moverCarrusel(1)">▶</button>
-</div>
-
+ 
 </div>

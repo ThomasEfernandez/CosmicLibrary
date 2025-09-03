@@ -52,4 +52,13 @@ export class SeccionCarrucelComponent  implements AfterViewInit {
     if (this.desplazamiento > this.maxScroll) this.desplazamiento = this.maxScroll;
     this.transformStyle = `translateX(-${this.desplazamiento}px)`;
   }
+  // ...existing code...
+currentIndex = 0;
+
+irACarrusel(index: number) {
+  this.currentIndex = index;
+  this.desplazamiento = index * this.cardWidth;
+  this.transformStyle = `translateX(-${this.desplazamiento}px)`;
+}
+// ...existing code...
 }
